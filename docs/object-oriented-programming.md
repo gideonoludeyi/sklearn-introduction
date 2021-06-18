@@ -1,4 +1,4 @@
-# Introduction to Scikit-Learn ([`sklearn`](https://scikit-learn.org/stable/getting_started.html))
+# Overview
 1. **Object-Oriented Programming (OOP)**
 2. Inheritance (OOP)
 3. Estimators
