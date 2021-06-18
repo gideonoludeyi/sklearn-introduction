@@ -3,5 +3,6 @@
 2. Inheritance (OOP)
 3. Estimators
 4. Transformers
-5. BaseEstimator & TransformerMixin API
-6. Common Scikit-learn modules
+5. Writing Custom Estimators & Transformers
+6. Pipeline
+7. Common Scikit-learn modules
