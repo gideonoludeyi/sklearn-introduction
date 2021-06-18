@@ -1,4 +1,4 @@
-# Object-Oriented Programming (OOP
+# Object-Oriented Programming (OOP)
 
 ## Overview
 1. **Object-Oriented Programming (OOP)**
