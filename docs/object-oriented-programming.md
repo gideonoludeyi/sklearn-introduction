@@ -5,7 +5,6 @@
 4. Transformers
 5. BaseEstimator & TransformerMixin API
 6. Common Scikit-learn modules
-&nbsp
 
 ## Object-Oriented Programming (OOP)
 
