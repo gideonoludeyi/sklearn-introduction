@@ -1,12 +1,12 @@
-# Overview
+# Object-Oriented Programming (OOP
+
+## Overview
 1. **Object-Oriented Programming (OOP)**
 2. Inheritance (OOP)
 3. Estimators
 4. Transformers
 5. BaseEstimator & TransformerMixin API
 6. Common Scikit-learn modules
-
-## Object-Oriented Programming (OOP)
 
 **What is Object-Oriented Programming?**  
 A style of programming that emphasizes the use of _objects_ to represent and process data in a program.
