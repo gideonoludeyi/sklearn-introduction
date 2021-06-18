@@ -1,5 +1,3 @@
-# Introduction to Scikit-learn
-
 ## Overview
 1. [Object-Oriented Programming (OOP)](./object-oriented-programming.md)
 2. Inheritance (OOP)
