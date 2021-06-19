@@ -10,5 +10,5 @@
 7. Common Scikit-learn modules
 
 ---
-| [Prev - Inheritance (OOP)](./inheritance.md "Inheritance (OOP)") | Next - Transformers   |
-|:-----------------------------------------------------------------|---------------------------------------------------:|
+| [Prev - Inheritance (OOP)](./inheritance.md "Inheritance (OOP)")  | Next - Transformers   |
+|:------------------------------------------------------------------|---------------------------------------------------:|
