@@ -3,7 +3,7 @@
 ## Overview
 1. [_Object-Oriented Programming (OOP)_](./object-oriented-programming.md)
 2. [_Inheritance (OOP)_](./inheritance.md)
-3. [Estimators](./estimators.md)
+3. [_Estimators_](./estimators.md)
 4. **Transformers**
 5. Writing Custom Estimators & Transformers
 6. Pipeline
