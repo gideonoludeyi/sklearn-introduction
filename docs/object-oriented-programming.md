@@ -2,7 +2,7 @@
 
 ## Overview
 1. **Object-Oriented Programming (OOP)**
-2. [Inheritance (OOP)](./inheritance.md)
+2. Inheritance (OOP)
 3. Estimators
 4. Transformers
 5. Writing Custom Estimators & Transformers
