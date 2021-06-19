@@ -114,7 +114,7 @@ It appears that our model predicted `97%` of our test set correctly.
 
 I would encourage you to take a look at the [`Scikit-learn`](https://scikit-learn.org/stable/) documentation to get familiar with several models and functions the package provides.
 
-In the next tutorial, we will be taking a look at `Transformers` and how they are used for preprocessing data before training.
+In the next tutorial, we will be taking a look at `Transformers` and how to use them for data preprocessing.
 
 ---
 | [Prev - Inheritance (OOP)](./inheritance.md) | [Next - Transformers](./transformers.md) |
