@@ -278,10 +278,6 @@ def create_user_object(username, birthdate):
 
     return user
 ```
-1. Represent each _user_ data (`username`, `birthdate`, `friends`, `posts`).
-2. Add a new `friend`
-3. Publish a `post`
-4. Like a `post`
 ```python
 >>> # Requirement 1: Represent user data
 >>> johndoe = create_user_object('johndoe', '2015-04-20')
@@ -437,8 +433,8 @@ class MyClass(builtins.object)
  |      list of weak references to the object (if defined)
 ```
 
-Hopefully between the [_Basic Solution_](#basic-solution) and [_OOP Solution_](#oop-solution), you now recognize how powerful the **Object-Oriented Programming** paradigm is.
+Hopefully through these examples ([_Basic Solution_](#basic-solution) and [_OOP Solution_](#oop-solution)), you now realize how powerful the **Object-Oriented Programming** paradigm is.
 
-This style of programming will definitely come up more frequently as you advance in your programming journey.
+This style of programming will come up frequently as you advance in your programming journey.
 
-As an additional exercise, you can try implementing a `Post` _class_ with what we've learned so far.
+As an additional exercise, you can try implementing a `Post` _class_ with what we've learned so far and integrate it with the current code.
