@@ -210,6 +210,8 @@ And this is all powered by inheritance.
 
 Any number of _classes_ can extend a single `Superclass`, and it leads to less code repetition (notice we did not re-implement the `publish_post` in `Business` _class_ even though we used it in the `advertise_product` method).
 
+Next time, we'll finally be into the `Scikit-learn` library, starting with the `Estimator` API for working with machine-learning models.
+
 ---
 > **Quick Tip:**  
 The `isinstance` _function_ determines if an _object_ is an _instance_ of a _class_ either directly or via inheritance:  
@@ -225,5 +227,6 @@ True
 False
 ```
 
---- 
-Next time, we'll finally be into the `Scikit-learn` library, starting with the `Estimator` API for working with machine-learning models.
+---
+| [Prev - Object-Oriented Programming](./object-oriented-programming.md "Object-Oriented Programming")  | [Next - Estimators](./estimators.md "Estimators")   |
+|:----------------------------------------------------------------------------------------------------- |-----------------------------------------------------:|
