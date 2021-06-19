@@ -120,4 +120,4 @@ In the next tutorial, we will be taking a look at `Transformers` and how they ar
 
 ---
 | [Prev - Inheritance (OOP)](./inheritance.md) | [Next - Transformers](./transformers.md) |
-|:---------------------------------------------|--------------------:|
+|:---------------------------------------------|-----------------------------------------:|
