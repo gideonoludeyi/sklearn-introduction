@@ -11,8 +11,6 @@
 
 ---
 
-## Inheritance (OOP)
-
 **What is Inheritance?**  
 Inheritance is an _OOP_ concept in which a _class_ inherits all the _properties_ and _methods_ of another _class_.
 
