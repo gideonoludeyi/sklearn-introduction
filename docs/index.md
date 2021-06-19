@@ -8,6 +8,5 @@
 7. Common Scikit-learn modules
 
 ---
-| Prev  | [Next - Object-Oriented Programming (OOP)](./object-oriented-programming.md "Object-Oriented Programming (OOP)")   |
-|:------|-------------------------------------------------------------------------------------------------------------------:|
-
+| [Prev](./index.md "Overview")  | [Next - Object-Oriented Programming (OOP)](./object-oriented-programming.md "Object-Oriented Programming (OOP)")   |
+|:-----------------------------------------------------------------------------------------------------|-----------------------------------------------------:|
