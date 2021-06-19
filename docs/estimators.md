@@ -37,10 +37,8 @@ from the `sklearn.ensemble` module is one such `estimator` for _classification_ 
 >>> from sklearn.ensemble import RandomForestClassifier
 ```
 
-We can instantiate the `RandomForestClassifier`.
-
-Each _estimator_ receives different arguments during instantiation depending on the algorithm,
-so it is handy to have access to the online documentation for these models.
+Each _estimator_ receives different arguments during _instantiation_ depending on the requirements of the algorithm,
+so it is handy to have access to the [online documentation](https://scikit-learn.org/stable/modules/classes.html) for these _estimators_.
 
 Fortunately, most _estimator classes_ in `Scikit-learn` provide sensible default arguments,
 so we can start using the models without worrying too much about the arguments to pass in.
