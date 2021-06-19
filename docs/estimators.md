@@ -119,5 +119,5 @@ I would encourage you to take a look at the [`Scikit-learn`](https://scikit-lear
 In the next tutorial, we will be taking a look at `Transformers` and how they are used for preprocessing data before training.
 
 ---
-| [Prev - Inheritance (OOP)](./inheritance.md) | Next - Transformers |
+| [Prev - Inheritance (OOP)](./inheritance.md) | [Next - Transformers](./transformers.md) |
 |:---------------------------------------------|--------------------:|
