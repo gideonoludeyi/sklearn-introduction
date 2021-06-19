@@ -38,7 +38,7 @@ from the `sklearn.ensemble` module is one such `estimator` for _classification_ 
 ```
 
 Each _estimator_ receives different arguments during _instantiation_ depending on the requirements of the algorithm,
-so it is handy to have access to the [online documentation](https://scikit-learn.org/stable/modules/classes.html) for these _estimators_.
+so it is handy to have access to the [online documentation](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.ensemble) for these _estimators_.
 
 Fortunately, most _estimator classes_ in `Scikit-learn` provide sensible default arguments,
 so we can start using the models without worrying too much about the arguments to pass in.
