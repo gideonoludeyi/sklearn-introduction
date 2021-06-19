@@ -58,7 +58,7 @@ Every _estimator_ in `Scikit-learn` implements a [`fit`](https://scikit-learn.or
 ```python
 >>> # X is the features of your training set
 >>> # y is the label for your training set
->>> clf.fit(X, y)
+>>> estimator.fit(X, y)
 ```
 
 Since it is best practice to set aside some of the data for evaluating the ability of a model, we will split the data (`X, y`) to training and test sets.
@@ -76,8 +76,8 @@ The one we are going to use to split our data is the [`train_test_split`](https:
 
 Now we can call the RandomForestClassifier.fit method on X_train and y_train.
 ```python
->>> clf = RandomForestClassifier(random_state=0)
->>> clf.fit(X_train, y_train)
+>>> estimator = RandomForestClassifier(random_state=0)
+>>> estimator.fit(X_train, y_train)
 RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
                        criterion='gini', max_depth=None, max_features='auto',
                        max_leaf_nodes=None, max_samples=None,
@@ -91,7 +91,7 @@ RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
 After training the _classifier_ on the training set, we can now make predictions with the `predict` method.  
 As an example, let's make a prediction on the first 5 elements of the test set, and compare with the actual results.
 ```python
->>> y_pred = clf.predict(X_test[0:5])
+>>> y_pred = estimator.predict(X_test[0:5])
 >>> y_pred # predictions
 array([1, 2, 1, 0, 1])
 >>> y_test[0:5] # true result
@@ -108,7 +108,7 @@ Our `RandomForestClassifier` _estimator_ predicted the first 5 elements correctl
 Considering that we are not interested in the _predictions_ themselves, we just want to know how well our model performed.  
 The `RandomForestClassifier` provides a `score` _method_, to determine how accurate our model is on a test set.
 ```python
->>> clf.score(X_test, y_test)
+>>> estimator.score(X_test, y_test)
 0.9736842105263158
 ```
 
