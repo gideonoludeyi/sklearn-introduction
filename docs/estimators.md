@@ -59,7 +59,7 @@ Every _estimator_ in `Scikit-learn` implements a [`fit`](https://scikit-learn.or
 >>> estimator.fit(X, y)
 ```
 
-Since it is best practice to set aside some of the data for evaluating the ability of a model, we will split the data (`X, y`) to training and test sets.
+Since it is best practice to set aside some of the data to evaluate the ability of a model, we will split the data (`X, y`) to training and test sets.
 
 `Scikit-learn` provides utilities for working with your data.
 The one we are going to use to split our data is the [`train_test_split`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) _function_ in the `sklearn.model_selection` module.
