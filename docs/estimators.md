@@ -1,8 +1,8 @@
 # Estimators
 
 ## Overview
-1. [Object-Oriented Programming (OOP)](./object-oriented-programming.md)
-2. [Inheritance (OOP)](./inheritance.md)
+1. [_Object-Oriented Programming (OOP)_](./object-oriented-programming.md)
+2. [_Inheritance (OOP)_](./inheritance.md)
 3. **Estimators**
 4. Transformers
 5. Writing Custom Estimators & Transformers
