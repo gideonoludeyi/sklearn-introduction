@@ -228,5 +228,5 @@ False
 ```
 
 ---
-| [Prev - Object-Oriented Programming (OOP)](./object-oriented-programming.md "Object-Oriented Programming (OOP)")  | [Next - Estimators]   |
+| [Prev - Object-Oriented Programming (OOP)](./object-oriented-programming.md "Object-Oriented Programming (OOP)")  | [Next - Estimators](./estimators.md "Estimators")   |
 |:----------------------------------------------------------------------------------------------------------------- |-----------------------------------------------------:|
