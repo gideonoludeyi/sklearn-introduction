@@ -9,5 +9,4 @@
 
 ---
 | [Next - Object-Oriented Programming (OOP)](./object-oriented-programming.md "Object-Oriented Programming (OOP)")   |
-|:---------------------------------------------------:|
 
