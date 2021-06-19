@@ -8,3 +8,6 @@
 7. Common Scikit-learn modules
 
 ---
+
+| Prev        | Next         |
+|:----------- |-------------:|
