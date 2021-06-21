@@ -242,7 +242,7 @@ And call it like this:
 >>> my_object.my_method(...)
 ```
 
-It is similar to a _function_ definition except for 2 noticeable differences:
+It is similar to a _function_ definition except for 2 notable differences:
 1. The definition exists within the indentation block of the _class_ definition.
     - This means that most of the code relating to the _class_ are bundled up in the _class_ definition.
     - It's now clear the _method_ is meant only for _objects_ of that _class_.
