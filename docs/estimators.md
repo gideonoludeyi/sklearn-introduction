@@ -114,7 +114,7 @@ It appears that our model predicted `97%` of our test set correctly.
 
 I would encourage you to take a look at the [`Scikit-learn`](https://scikit-learn.org/stable/) documentation to get familiar with several models and functions the package provides.
 
-You can refer to this image 👇 in the case where you are not sure which estimator to use.
+You can refer to this image 👇 in the case where you are not sure which _estimator_ to use.
 | ![ML Map](https://scikit-learn.org/stable/_static/ml_map.png) |
 |:-------------------------------------------------------------:|
 | Figure 1: `Scikit-learn` [Machine Learning Map](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)  |
