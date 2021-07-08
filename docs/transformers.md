@@ -102,7 +102,7 @@ Take a look at the following dataset:
 | 107 |                 7.3 |                2.9 |          0.063 |         0.018 | virginica  |
 |   7 |                 5   |                3.4 |          0.015 |         0.002 | setosa     |
 
-The `target` column is an issue for most `Scikit-learn` _estimators_ because of its datatype is not numeric. \
+The `target` column is an issue for most `Scikit-learn` _estimators_ because its datatype is not numeric. \
 Luckily, `Scikit-learn` provides a some classes that implement certain procedures to _transform_ your data into a more compatible format for your model,
 one of which is the `LabelEncoder` class from the `sklearn.preprocessing` module.
 
