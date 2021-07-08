@@ -232,5 +232,5 @@ For further reading, you can refer to the `Scikit-learn` documentation on [Datas
 In the next tutorial we will be creating our own estimators and transformers using what we have learned so far in this series.
 
 ---
-| [Prev - Estimators](./estimators.md) | [Next](./custom_transformer_classes.md) |
+| [Prev - Estimators](./estimators.md) | Next - Writing Custom Estimators & Transformers |
 |:-------------------------------------|--------------------:|
