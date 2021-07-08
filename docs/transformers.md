@@ -118,7 +118,11 @@ extracts essential information from the provided data for transforming the subse
 - `.transform`  
 returns a transformation of the data.
 
-You may recall that the `.fit` method was present in the `RandomForestClassifier`. Transformers are essentially _estimators_. We established last time that _estimators_ train on provided data to make predictions, _transformers_ also train on provided data, but rather than returning a prediction, they return a transformation of the input data. In fact, making predictions is essentially the same concept: you receive input data and return output data that is based on a transformation of the input data.
+You may recall that the `.fit` method was present in the `RandomForestClassifier`. \
+Transformers are essentially _estimators_. \
+We established last time that _estimators_ train on provided data to make predictions. \
+Well, _transformers_ also train on provided data, but rather than output a prediction, they return a transformation of the input data. \
+In fact, making predictions is the same concept: you receive input data, apply one or more transformations on the data, and return the result.
 
 ```python
 >>> target = df['target']
