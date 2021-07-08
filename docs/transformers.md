@@ -185,7 +185,7 @@ The example below trains a _Support Vector Machine Classifier_ on the current da
 (150,)
 >>> X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 >>>
->>> clf = SVC(random_state=seed)
+>>> clf = SVC(random_state=0)
 >>> clf.fit(X_train, y_train)
 SVC(C=1.0, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
     decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
