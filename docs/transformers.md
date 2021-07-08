@@ -162,10 +162,10 @@ In the `.transform` phase, the `label_encoder` returned a new array with each oc
 
 Another, more subtle issue, with this data is the inconsistent scale of the features.
 
-|       |   sepal length (cm) |   sepal width (cm) |   petal length |   petal width |     target |
-|:------|--------------------:|-------------------:|---------------:|--------------:|-----------:|
-| mean  |            5.84333  |           3.05733  |       0.03758  |    0.0119933  |   1        |
-| std   |            0.828066 |           0.435866 |       0.017653 |    0.00762238 |   0.819232 |
+|       |   sepal length (cm) |   sepal width (cm) |   petal length |   petal width |
+|:------|--------------------:|-------------------:|---------------:|--------------:|
+| mean  |            5.84333  |           3.05733  |       0.03758  |    0.0119933  |
+| std   |            0.828066 |           0.435866 |       0.017653 |    0.00762238 |
 
 The `mean` and `std` of the `sepal` and `petal` features vary by a great deal.
 
