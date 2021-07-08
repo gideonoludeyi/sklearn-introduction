@@ -202,16 +202,17 @@ Apply scaling on each feature in the dataset using the `StandardScaler` transfor
 >>> scaler = StandardScaler()
 >>> scaler.fit(X_train)
 StandardScaler(copy=True, with_mean=True, with_std=True)
->>> X_train = scaler.transform(X_train)
+>>> X_train_transformed = scaler.transform(X_train)
+>>> # X_train_transformed = scaler.fit_transform(X_train) # composes the previous two steps
 >>>
 >>> clf = SVC(random_state=0)
->>> clf.fit(X_train, y_train)
+>>> clf.fit(X_train_transformed, y_train)
 SVC(C=1.0, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
     decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
     max_iter=-1, probability=False, random_state=0, shrinking=True, tol=0.001,
     verbose=False)
->>> X_test = scaler.transform(X_test)
->>> clf.score(X_test, y_test)
+>>> X_test_transformed = scaler.transform(X_test)
+>>> clf.score(X_test_transformed, y_test)
 0.9736842105263158
 ```
 As you can see, the accuracy went up from `76%` all the way to `97%`. \
