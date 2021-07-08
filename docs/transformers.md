@@ -226,7 +226,7 @@ The boost in performance is as a result of a similar scale between all features.
 _Random Forest_ models are not affected by difference in scale, therefore I am using the _Support Vector Machine_ to illustrate the significance of scaling for other machine-learning algorithms.
 
 Hopefully, this example sheds light on the effectiveness of _transformers_ for manipulating your data. \
-For further reading, you can refer to the `Scikit-learn` [documentation](https://scikit-learn.org/stable/data_transforms.html)
+For further reading, you can refer to the `Scikit-learn` documentation on [Dataset transformations](https://scikit-learn.org/stable/data_transforms.html)
 
 In the next tutorial we will be creating our own estimators and transformers using what we have learned so far in this series.
 
