@@ -66,6 +66,7 @@ Take a look at the following dataset:
 >>> import numpy as np
 >>> import pandas as pd
 >>> from sklearn.datasets import load_iris
+>>>
 >>> def make_dirty(iris_data):
 ...     """ a utility function to dirty up the iris dataset
 ...     to make it unpresentable to most Scikit-learn estimators.
