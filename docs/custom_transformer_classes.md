@@ -14,5 +14,5 @@
 
 
 ---
-| [Prev - Estimators](./transformers.md) | Next |
+| [Prev - Transformers](./transformers.md) | Next |
 |:-------------------------------------|--------------------:|
