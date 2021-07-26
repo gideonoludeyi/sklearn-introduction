@@ -5,7 +5,7 @@
 2. [_Inheritance (OOP)_](./inheritance.md)
 3. **Estimators**
 4. Transformers
-5. Writing Custom Estimators & Transformers
+5. Custom Estimators
 6. Pipeline
 7. Common Scikit-learn modules
 

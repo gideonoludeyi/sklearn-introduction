@@ -5,7 +5,7 @@
 2. [_Inheritance (OOP)_](./inheritance.md)
 3. [_Estimators_](./estimators.md)
 4. **Transformers**
-5. Writing Custom Estimators & Transformers
+5. Custom Estimators
 6. Pipeline
 7. Common Scikit-learn modules
 
@@ -232,5 +232,6 @@ For further reading, you can refer to the `Scikit-learn` documentation on [Datas
 In the next tutorial we will be creating our own estimators and transformers using what we have learned so far in this series.
 
 ---
-| [Prev - Estimators](./estimators.md) | [Next - Writing Custom Estimators & Transformers](./custom_transformer_classes.md) |
+
+| [Prev - Estimators](./estimators.md) | [Next - Custom Estimators](./custom_estimators.md) |
 |:-------------------------------------|--------------------:|
