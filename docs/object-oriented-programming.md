@@ -202,7 +202,7 @@ Attempting to access a property that does not exist on an _object_ will result i
 AttributeError: 'User' object has no attribute 'name'
 ```
 
-We can even combine the process _instantiating_ the _object_ and _initializing_ its _properties_ into a single _function_ `create_user_object`.
+We can even combine the process of _instantiating_ the _object_ and _initializing_ its _properties_ into a single _function_ `create_user_object`.
 
 This ensures that every `User` _object_ we create has the expected _properties_ defined when we use the `create_user_object` _function_.
 ```python
