@@ -439,7 +439,7 @@ Hopefully through these examples ([_Basic Solution_](#basic-solution) and [_OOP 
 
 This style of programming will come up frequently as you advance in your programming journey.
 
-As an additional exercise, you can try implementing a `Post` _class_ with what we've learned so far and integrate it with the current code.
+As an exercise, you can try implementing a `Post` _class_ with what we've learned so far and integrate it with the current code.
 
 ---
 | [Prev - Overview](./index.md) | [Next - Inheritance (OOP)](./inheritance.md) |
