@@ -386,7 +386,7 @@ Both the _properties_ and _methods_ are visible in the same location.
 
 #### Naming Convention
 The built-in _classes_ in _Python_ are typically in lower-case because they are used frequently and recognized by most _Python_ developers as _classes_.
-However, when defining custom _classes_, it is standard to use `PascalCase` casing for custom _classes_ names
+However, when defining custom _classes_, it is standard to use `PascalCase` casing for custom class names
 to ensure that readers of the code recognize they are _classes_ at a glance.
 
 #### Documentation
