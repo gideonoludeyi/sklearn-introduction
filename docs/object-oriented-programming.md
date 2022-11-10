@@ -328,7 +328,7 @@ Fortunately, _Python_ provides a solution for this.
 There are a set of special _method_ definitions that _Python_ watches out for in a _class_.  
 If present, these special _methods_ enhance the functionalities of the _classes_ that define them and their _objects_.
 
-These _methods_ are commonly referred to as [_dunder methods_](https://docs.python.org/3/reference/datamodel.html#special-method-names),
+These _methods_ are commonly referred to as [_dunder (double-underscore) methods_](https://docs.python.org/3/reference/datamodel.html#special-method-names),
 due to their naming convention (`def __methodname__(self, ...)`).
 
 One of those special methods is the `__init__` method.  
