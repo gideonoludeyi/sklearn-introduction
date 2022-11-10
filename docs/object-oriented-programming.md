@@ -2,10 +2,10 @@
 
 ## Overview
 1. **Object-Oriented Programming (OOP)**
-2. Inheritance (OOP)
-3. Estimators
-4. Transformers
-5. Custom Estimators
+2. [Inheritance (OOP)](./inheritance.md)
+3. [Estimators](./estimators.md)
+4. [Transformers](./transformers)
+5. [Custom Estimators](./custom_estimators.md)
 6. Pipeline
 7. Common Scikit-learn modules
 
