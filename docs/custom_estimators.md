@@ -4,9 +4,9 @@
 1. [_Object-Oriented Programming (OOP)_](./object-oriented-programming.md)
 2. [_Inheritance (OOP)_](./inheritance.md)
 3. [_Estimators_](./estimators.md)
-4. [_Transformers_](./transformers)
+4. [_Transformers_](./transformers.md)
 5. **Custom Estimators**
-6. Pipeline
+6. [Pipeline](./pipeline.md)
 7. Common Scikit-learn modules
 
 ---
@@ -36,7 +36,7 @@ In fact, the only methods defined in `MyEstimator` are:
 
 These are inherited from `sklearn.base.BaseEstimator` and are used internally by `Scikit-learn`, so we rarely interact directly with these methods.
 
-In order to create a useful _estimator_, we must first recognize its purpose to identify the category it fits in.  
+In order to create a useful _estimator_, we must first recognize its purpose to identify the category it fits in.
 Some categories include:
 - Transformation
 - Regression
@@ -54,8 +54,8 @@ For example, `sklearn.base.TransformerMixin` can be inherited in tandem with `sk
 ...     pass
 ```
 
-> **Note:**  
-> The `sklearn.base.BaseEstimator` must be inherited as well.  
+> **Note:**
+> The `sklearn.base.BaseEstimator` must be inherited as well.
 > This is how `Scikit-learn` knows that a class is indeed an _estimator_.
 
 
@@ -71,13 +71,13 @@ As an example, the `TransformerMixin` class requires its subclasses to define th
 >>> import numpy as np
 >>> import pandas as pd
 >>> from sklearn.datasets import load_iris
->>> 
+>>>
 >>> seed = 0
 >>> np.random.seed(seed)
->>> 
+>>>
 >>> X, y = load_iris(return_X_y=True)
->>> 
->>> 
+>>>
+>>>
 >>> class MyTransformer(BaseEstimator, TransformerMixin):
 ...     def fit(self, X, y=None):
 ...         '''
@@ -90,7 +90,7 @@ As an example, the `TransformerMixin` class requires its subclasses to define th
 ...         return a transformation of the input X data.
 ...         '''
 ...         return X
->>> 
+>>>
 >>> my_transformer = MyTransformer()
 >>> X_transformed = my_transformer.fit_transform(X)
 ```
@@ -113,13 +113,13 @@ But first, we'll load the data.
 >>> import numpy as np
 >>> import pandas as pd
 >>> from sklearn.datasets import load_iris
->>> 
+>>>
 >>> seed = 0
 >>> np.random.seed(seed)
->>> 
+>>>
 >>> iris = load_iris()
->>> 
->>> labels = iris['target_names'][iris['target']] 
+>>>
+>>> labels = iris['target_names'][iris['target']]
 >>> columns = iris['feature_names'] + ['target']
 >>> values = np.c_[iris['data'], labels]
 >>> df = pd.DataFrame(values, columns=columns)
@@ -152,7 +152,7 @@ Next, we define the required methods for `TransformerMixin`.
 ...     def fit(self, X, y=None):
 ...         ''' Not yet implemented '''
 ...         return self
-... 
+...
 ...     def transform(self, X, y=None):
 ...         ''' Not yet implemented '''
 ...         pass
@@ -173,28 +173,28 @@ However, we need to compute the corresponding integer pairs in the `.fit` method
 ...     def fit(self, X, y=None):
 ...         # Get the unique values from array X
 ...         unique_values = np.unique(X) # ['setosa', 'versicolor', 'virginica']
-... 
+...
 ...         # create a dictionary that maps unique_values to integers
 ...         # mapping = { 'setosa': 0, 'versicolor': 1, 'virginica': 2 }
 ...         mapping = dict()
 ...         for integer, value in enumerate(unique_values):
 ...             mapping[value] = integer
-... 
+...
 ...         # save the mapping on the current object to be used in the .transform method
 ...         self.mapping = mapping
-... 
+...
 ...         # Scikit-learn expects the .fit method to return the current object
 ...         return self
-... 
+...
 ...     def transform(self, X, y=None):
 ...         mapping = self.mapping
-...         
+...
 ...         # Swap each occurrence of the unique values with their integer pairs
 ...         transformed_X = []
 ...         for iris_name in X:
 ...             integer = mapping[iris_name] # get the flower's corresponding integer
 ...             transformed_X.append(integer)
-...         
+...
 ...         # return the transformed data as a numpy array
 ...         return np.array(transformed_X)
 ```
@@ -206,19 +206,19 @@ Let's compare our `MyLabelEncoder` with `sklearn.preprocessing.LabelEncoder`.
 >>> label_encoder = LabelEncoder()
 >>> my_label_encoder = MyLabelEncoder()
 >>> values = df['target'].values
->>> 
+>>>
 >>> sklearn_encoding = label_encoder.fit_transform(df['target'])
 >>> custom_encoding = my_label_encoder.fit_transform(df['target']) # .fit_transform inherited from TransformerMixin
->>> 
+>>>
 >>> np.all(sklearn_encoding == custom_encoding) # all elements in both encoded arrays are equal
 True
 ```
 
 Our custom `MyLabelEncoder` produces the same result as `sklearn.preprocessing.LabelEncoder`.
 
-> **Note:**  
+> **Note:**
 > The `.fit` method is for extracting information from the data passed in (usually the training set) on how to transform subsequent data. Therefore, it should only be used once, and on the training set only.
-> 
+>
 > Similarly, the `.fit_transform` method should be used only once on the training set because it calls `.fit` internally. For, every subsequent attempt to transform the data, use `.transform`.
 
 
@@ -253,13 +253,13 @@ Parameters that are not computed during the `.fit` method (learned from the data
 >>> class MyRandomClassifier(BaseEstimator, ClassifierMixin):
 ...    def __init__(self, random_state=None):
 ...        self.random_state = random_state
-... 
+...
 ...    def fit(self, X, y):
 ...        ''' Extract labels from the training set, in the `y` parameter.
 ...        '''
 ...        self.labels = np.unique(y)
 ...        return self # 👈 required
-... 
+...
 ...    def predict(self, X):
 ...        ''' Randomly classifies the rows in the data.
 ...        In order to reproduce the random results via random_state,
@@ -269,7 +269,7 @@ Parameters that are not computed during the `.fit` method (learned from the data
 ...        labels = self.labels
 ...        predictions = generator.choice(labels, size=len(X)) # generate random predictions
 ...        return predictions
->>> 
+>>>
 >>> clf = MyRandomClassifier(random_state=seed)
 >>> clf.fit(X, y)
 MyRandomClassifier(random_state=0)
@@ -287,12 +287,12 @@ array([2, 1, 1, 0, 0, 0, 0, 0, 0, 2, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 0, 2,
 ```
 
 ### Conclusion
-> **Further Reading:**  
+> **Further Reading:**
 > - [Random Generator](https://numpy.org/doc/stable/reference/random/generator.html?highlight=generator#random-generator)
 > - [NumPy Random Seed, Explained](https://www.sharpsightlabs.com/blog/numpy-random-seed/)
 
 Understanding how `Scikit-learn` _estimators_ work under the hood will help you write cleaner code that interacts nicely with the `Scikit-learn` API. Especially _pipelines_, which we will be taking a look at next.
 
 ---
-| [Prev - Transformers](./transformers.md) | Next |
+| [Prev - Transformers](./transformers.md) | [Next - Pipeline](./pipeline.md) |
 |:-------------------------------------|--------------------:|

@@ -6,7 +6,7 @@
 3. [_Estimators_](./estimators.md)
 4. **Transformers**
 5. [Custom Estimators](./custom_estimators.md)
-6. Pipeline
+6. [Pipeline](./pipeline.md)
 7. Common Scikit-learn modules
 
 **Prerequisite:**
@@ -75,21 +75,21 @@ Take a look at the following dataset:
 ...         ('setosa', 'versicolor', 'virginica')
 ...     2. Scaled dimensions of 'petal length' and 'petal width'
 ...     """
-... 
+...
 ...     features = iris_data['data']
 ...     target = iris_data['target']
 ...     columns = iris_data['feature_names'] + ['target']
-... 
+...
 ...     df = pd.DataFrame(np.c_[features, target], columns=columns)
-...     
+...
 ...     # change target from number to text
 ...     df['target'] = iris_data['target_names'][target]
-... 
+...
 ...     # make petal features with dimensions in meters
 ...     df[['petal length', 'petal width']] = df[['petal length (cm)', 'petal width (cm)']] * .01
-... 
+...
 ...     return df[['sepal length (cm)', 'sepal width (cm)', 'petal length', 'petal width', 'target']]
->>> 
+>>>
 >>> iris = load_iris()
 >>> df = make_dirty(iris)
 >>> df.sample(5, random_state=0)
@@ -112,10 +112,10 @@ one of which is the `LabelEncoder` class from the `sklearn.preprocessing` module
 ```
 
 All _transformers_ in `Scikit-learn` implement the following methods:
-- `.fit`  
+- `.fit`
 extracts essential information from the provided data for transforming the subsequent data.
 
-- `.transform`  
+- `.transform`
 returns a transformation of the data.
 
 You may recall that the `.fit` method was present in the `RandomForestClassifier`. \
@@ -141,9 +141,9 @@ In fact, making predictions is the same concept: you receive input data, apply o
 | 107 |                 7.3 |                2.9 |          0.063 |         0.018 |        2 |
 |   7 |                 5   |                3.4 |          0.015 |         0.002 |        0 |
 
-> **Note:**  
-`LabelEncoder` should only be used for the column being predicted, and not on feature columns.  
-If you are looking to encode feature columns, consider other forms of encoding classes such as `sklearn.preprocessing.OneHotEncoder` or `sklearn.preprocessing.OrdinalEncoder`.  
+> **Note:**
+`LabelEncoder` should only be used for the column being predicted, and not on feature columns.
+If you are looking to encode feature columns, consider other forms of encoding classes such as `sklearn.preprocessing.OneHotEncoder` or `sklearn.preprocessing.OrdinalEncoder`.
 Alternatively, consider the `category_encoders` [package](https://contrib.scikit-learn.org/category_encoders/)
 
 **What Happened?** \

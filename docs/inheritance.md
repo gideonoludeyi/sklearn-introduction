@@ -6,19 +6,19 @@
 3. [Estimators](./estimators.md)
 4. [Transformers](./transformers)
 5. [Custom Estimators](./custom_estimators.md)
-6. Pipeline
+6. [Pipeline](./pipeline.md)
 7. Common Scikit-learn modules
 
 ---
 
-**What is Inheritance?**  
+**What is Inheritance?**
 Inheritance is an _OOP_ concept in which a _class_ inherits all the _properties_ and _methods_ of another _class_.
 
 The _class_ that is _inherited_ is commonly referred to as the `Parent Class` or the `Superclass`, while the _class_ that _inherits_ the `Superclass` is known as the `Subclass`.
 
 You can think of the `Subclass` as a extension of the `Superclass` because it is extending the functionality of the `Superclass`. Everything that the `Superclass` can do, the `Subclass` can do the same (and more).
 
-**Example:**  
+**Example:**
 Extending the example from **_Object-Oriented Programming (OOP)_**, suppose that within the _Social Media_ platform, we want to model `Users` with additional abilities. For example, a `Business` account that should provide the same functionality as a `User`, plus the following:
 1. Advertise products
 2. Sell products
@@ -67,8 +67,8 @@ class Subclass(Superclass1, Superclass2, ..., SuperclassN):
     pass
 ```
 
-> **Note:**  
-In _Python_, `Subclasses` can inherit multiple `Superclasses`, however, this is not usually the case in other programming languages. 
+> **Note:**
+In _Python_, `Subclasses` can inherit multiple `Superclasses`, however, this is not usually the case in other programming languages.
 For example, in Java, a `Subclass` can inherit only one `Superclass`.
 
 ```python
@@ -98,7 +98,7 @@ We want to run our own `Business.__init__` method to _initialize_ properties exc
 To accomplish this, we need to _override_ the `User.__init__` method.
 
 **Method Override:**
-When a _method_ defined in a `Subclass` has the same name as another method in the `Superclass`, 
+When a _method_ defined in a `Subclass` has the same name as another method in the `Superclass`,
 the `Subclass` method takes precedence and _overrides_ the `Superclass` method.
 
 ```python
@@ -125,11 +125,11 @@ class Business(User):
         self.address = address
 ```
 ```python
->>> business = Business('My Business', 
+>>> business = Business('My Business',
 ...                     product='Watch',
 ...                     price=12.99,
-...                     description='The next generation digital Watch shop', 
-...                     joined_date='2019-09-01', 
+...                     description='The next generation digital Watch shop',
+...                     joined_date='2019-09-01',
 ...                     address='XXX Clockwork Lane')
 >>>
 >>> # We even have access to `username` defined in `User`
@@ -170,7 +170,7 @@ class Business(User):
     def advertise_product(self):
         title = f'{self.product} on Sale'
         text = f'Buy {self.product} now for ${self.price}'
-        
+
         post = create_post(title, text)
 
         self.publish_post(post) # we can call methods on the current object, even if it was defined in the Superclass
@@ -180,11 +180,11 @@ class Business(User):
 ```
 
 ```python
->>> business = Business('My Business', 
+>>> business = Business('My Business',
 ...                     product='Watch',
 ...                     price=12.99,
-...                     description='The next generation digital Watch shop', 
-...                     joined_date='2019-09-01', 
+...                     description='The next generation digital Watch shop',
+...                     joined_date='2019-09-01',
 ...                     address='XXX Clockwork Lane')
 >>> user = User('johndoe', '2015-04-20')
 >>>
@@ -213,8 +213,8 @@ Any number of _classes_ can extend a single `Superclass`, and it leads to less c
 Next time, we'll finally be into the `Scikit-learn` library, starting with the `Estimator` API for working with machine-learning models.
 
 ---
-> **Quick Tip:**  
-The `isinstance` _function_ determines if an _object_ is an _instance_ of a _class_ either directly or via inheritance:  
+> **Quick Tip:**
+The `isinstance` _function_ determines if an _object_ is an _instance_ of a _class_ either directly or via inheritance:
 `isinstance(object, class)`
 ```python
 >>> isinstance(user, User) # <- user is an instance of User

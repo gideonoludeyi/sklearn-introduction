@@ -4,9 +4,9 @@
 3. [Estimators](./estimators.md)
 4. [Transformers](./transformers.md)
 5. [Custom Estimators](./custom_estimators.md)
-6. Pipeline
+6. [Pipeline](./pipeline.md)
 7. Common Scikit-learn modules
 
 ---
-| [Prev](./index.md) | [Next - Object-Oriented Programming (OOP)](./object-oriented-programming.md) |
-|:-------------------|-----------------------------------------------------------------------------:|
+| [Next - Object-Oriented Programming (OOP)](./object-oriented-programming.md) |
+|-----------------------------------------------------------------------------:|

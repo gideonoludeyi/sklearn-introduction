@@ -4,9 +4,9 @@
 1. [_Object-Oriented Programming (OOP)_](./object-oriented-programming.md)
 2. [_Inheritance (OOP)_](./inheritance.md)
 3. **Estimators**
-4. [Transformers](./transformers)
+4. [Transformers](./transformers.md)
 5. [Custom Estimators](./custom_estimators.md)
-6. Pipeline
+6. [Pipeline](./pipeline.md)
 7. Common Scikit-learn modules
 
 **Prerequisite:**
@@ -14,10 +14,10 @@
 
 ---
 
-`Scikit-learn` is an open source machine learning library that supports supervised and unsupervised learning.  
+`Scikit-learn` is an open source machine learning library that supports supervised and unsupervised learning.
 It also provides various tools for model fitting, data preprocessing, model selection and evaluation, and many other utilities.
 
-In this tutorial, we will be using a very popular _classification dataset_ used in machine-learning: the iris dataset.  
+In this tutorial, we will be using a very popular _classification dataset_ used in machine-learning: the iris dataset.
 `Scikit-learn` provides a `load_iris` _function_ to retrieve this _dataset_ from the `sklearn.datasets` module.
 ```python
 >>> from sklearn.datasets import load_iris
@@ -28,7 +28,7 @@ In this tutorial, we will be using a very popular _classification dataset_ used 
 (150,)
 ```
 
-According to the `Scikit-learn` documentation, it provides _dozens of built-in machine learning algorithms and models_.  
+According to the `Scikit-learn` documentation, it provides _dozens of built-in machine learning algorithms and models_.
 These models (aka `estimators`) are implemented as _classes_ using the _OOP_ paradigm, and provide common _methods_ for processing data.
 
 The [`RandomForestClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
@@ -47,7 +47,7 @@ so we can start using the models without worrying too much about the arguments t
 >>> estimator = RandomForestClassifier(random_state=0)
 ```
 
-> **Note:**  
+> **Note:**
 Some `Scikit-learn` _estimators_ accept an optional `random_state` argument during instantiation.
 It is recommended to set this argument to a constant `int` throughout your program.
 This is to ensure a consistent result when you run your program multiple times.
@@ -86,7 +86,7 @@ RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
                        warm_start=False)
 ```
 
-After training the _classifier_ on the training set, we can now make predictions with the `predict` method.  
+After training the _classifier_ on the training set, we can now make predictions with the `predict` method.
 As an example, let's make a prediction on the first 5 elements of the test set, and compare with the actual results.
 ```python
 >>> y_pred = estimator.predict(X_test[0:5])
@@ -96,14 +96,14 @@ array([1, 2, 1, 0, 1])
 array([1, 2, 1, 0, 1])
 ```
 
-> **Note:**  
+> **Note:**
 `Scikit-learn` uses `numpy` _arrays_ in the background for working with data.
 Therefore it is advised to be familiar with the basic of `numpy` before starting out with `Scikit-learn`
 
 
 Our `RandomForestClassifier` _estimator_ predicted the first 5 elements correctly.
 
-Considering that we are not interested in the _predictions_ themselves, we just want to know how well our model performed.  
+Considering that we are not interested in the _predictions_ themselves, we just want to know how well our model performed.
 The `RandomForestClassifier` provides a `score` _method_, to determine how accurate our model is on a test set.
 ```python
 >>> estimator.score(X_test, y_test)
