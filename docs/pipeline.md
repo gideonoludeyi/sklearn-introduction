@@ -120,7 +120,6 @@ predictions = clf.predict(X)
 
 What our new implementation does is define a sequence of transformations to apply on the features `X` before it reaches the classifier. This makes it easier to easily add or remove transformations by updating the `feature_transformers` list. For example, we could add a `SelectKBest(k=3)` transformer at the beginning of the `feature_transformers` to use only the top 3 features that are useful in predicting the target. In other words, we can incorporate feature selection into our model with a single change in the code. This ability to easily compose transformations is effectively what scikit-learn's [`Pipeline`](https://scikit-learn.org/1.5/modules/generated/sklearn.pipeline.Pipeline.html) class does for us.
 
-> [!NOTE]
 > You may notice that the label encoder is not included in the list of transformers. Unlike other transformers, the label encoder transforms the target labels `y` instead of the features `X`, therefore it is applied outside of the pipeline.
 
 The new implementation using `Pipeline` looks like the following:
