@@ -115,9 +115,9 @@ It appears that our model predicted `97%` of our test set correctly.
 I would encourage you to take a look at the [`Scikit-learn`](https://scikit-learn.org/stable/) documentation to get familiar with several models and functions the package provides.
 
 You can refer to this image 👇 in the case where you are not sure which _estimator_ to use.
-| ![ML Map](https://scikit-learn.org/stable/_static/ml_map.png) |
+| ![ML Map](https://scikit-learn.org/stable/_downloads/b82bf6cd7438a351f19fac60fbc0d927/ml_map.svg) |
 |:-------------------------------------------------------------:|
-| Figure 1: `Scikit-learn` [Machine Learning Map](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)  |
+| Figure 1: `Scikit-learn` [Machine Learning Map](https://scikit-learn.org/stable/machine_learning_map.html)  |
 
 In the next tutorial, we will be taking a look at `Transformers` and how to use them for data preprocessing.
 
